@@ -1,27 +1,9 @@
 
 //invite links for bot https://discord.com/oauth2/authorize?client_id=1400062630856757269&permissions=2048&integration_type=0&scope=bot
-/* import { Client } from 'discord.js';
-const client = new Client({}); */
-/* const Client = new Discord.Client({intents:["GUILDS", "GUILDS_MESSAGES", "DIRECT_MESSAGES"]}); */
-/* 
-const Discord = require('discord.js');
-const Client = new Discord.Client({
-  intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent // Needed to read message text
-  ]
-}); */
-/* 
-const { Client, GatewayIntentBits, Discord } = require('discord.js');
-
-const client = new Client({
-  intents: [
-    GatewayIntentBits.Guilds,
-    GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.MessageContent
-  ]
-}); */
+// This is the main entry point for your Discord bot application.
+// Make sure to have a .env file with DISCORD_TOKEN variable set for your bot token
+// Example .env file content:
+// DISCORD_TOKEN=your_bot_token_here
 
 import 'dotenv/config'; // This line loads all variables from .env file
 
