@@ -14,7 +14,7 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
-  ]
+  ], partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'GUILD_MEMBER', 'USER']
 });
 
 // Event handler for when bot comes online
@@ -33,6 +33,5 @@ client.on('messageCreate', (message) => {
   }
 });
 
-// Login with your bot token (remove the extra "M" at the beginning)
 // Now you can access the token using process.env.DISCORD_TOKEN
 client.login(process.env.DISCORD_TOKEN); // Replace 'process.env.DISCORD_TOKEN' with your actual bot token
